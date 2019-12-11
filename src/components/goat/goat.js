@@ -26,7 +26,9 @@ class Goat extends React.Component {
     const { goat } = this.props;
 
     return (
-      <div className="card">
+    // <div className="row">
+    //   <div className="col">
+        <div className="card">
         <img className="card-img-top" src={goat.imgUrl} alt="Card cap"/>
         <div className="card-body">
         <h4 className="card-title">{goat.name}</h4>
@@ -36,6 +38,8 @@ class Goat extends React.Component {
         <button className="btn btn-primary" onClick={this.useGoatEvent}>Use Goat</button>
         </div>
       </div>
+      // </div>
+      // </div>
     );
   }
 }
